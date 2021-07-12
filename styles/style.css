@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    bottom: 50%;
+    padding: 10px;
+    position: absolute;
+}
+
+.button {
+    font-size: 20px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    width: 25%;
+}
+
+.numberPad {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+#zero {
+    width: 50%;
+}
+
+.display {
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    font-size: 45px;
+    height: 75px;
+    line-height: 75px;
+    padding-right: 10px;
+    text-align: right;
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "a basic calculator web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "phunky-panda94",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
