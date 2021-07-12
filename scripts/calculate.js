@@ -11,19 +11,24 @@ function calculate(input) {
     switch (operator) {
         case '+':
             return num1 + num2;
-        case '-':
+        case '−':
             return num1 - num2;
-        case 'x':
+        case '×':
             return num1 * num2;
-        case '/':
+        case '÷':
+            if (num2 == 0) {
+                return 'error';
+            }
             return num1 / num2;
+        case '%':
+            return num1 / 100;
     }
 
 };
 
 function parse(input) {
 
-    let parsed = input.split(/([x\+\-\/])/);
+    let parsed = input.split(/([%×\+−÷])/);
 
     num1 = Number(parsed[0]);
     operator = parsed[1];

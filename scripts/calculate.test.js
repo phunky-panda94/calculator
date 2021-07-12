@@ -47,3 +47,11 @@ describe('divide', () => {
     });
 
 });
+
+describe('percent', () => {
+
+    test('5% = 0.05', () => {
+        expect(calculate('5%')).toEqual(0.05);
+    });
+
+});
