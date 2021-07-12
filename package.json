@@ -9,6 +9,8 @@
   "author": "phunky-panda94",
   "license": "ISC",
   "dependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "jquery": "^3.6.0",
+    "jsdom": "^16.6.0"
   }
 }

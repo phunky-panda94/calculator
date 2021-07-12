@@ -36,4 +36,4 @@ function parse(input) {
 
 };
 
-//module.exports = calculate;
+module.exports = calculate;

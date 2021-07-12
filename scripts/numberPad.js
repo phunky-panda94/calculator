@@ -32,61 +32,61 @@ numbers.forEach((number) => {
     });
 });
 
-operators.forEach((operator) => {
-    operator.addEventListener('click', (e) => {
+// operators.forEach((operator) => {
+//     operator.addEventListener('click', (e) => {
 
-        if (!input) {
-            console.log('empty input');
-            return;
-        };
+//         if (!input) {
+//             console.log('empty input');
+//             return;
+//         };
 
-        if (numberOfOperators == 1) {
-            evaluate();
-        }
+//         if (numberOfOperators == 1) {
+//             evaluate();
+//         }
 
-        input+=e.target.textContent;
-        numberOfOperators++;
+//         input+=e.target.textContent;
+//         numberOfOperators++;
 
-    });
-});
+//     });
+// });
 
-clear.addEventListener('click', () => {
-    display.textContent = '';
-    input = '';
-})
+// clear.addEventListener('click', () => {
+//     display.textContent = '';
+//     input = '';
+// })
 
-equal.addEventListener('click', () => {
+// equal.addEventListener('click', () => {
 
-    if (numberOfOperators == 0) {
-        return input;
-    }
+//     if (numberOfOperators == 0) {
+//         return input;
+//     }
 
-    evaluate();
+//     evaluate();
 
-});
+// });
 
-decimal.addEventListener('click', (e) => {
+// decimal.addEventListener('click', (e) => {
 
-    if (!input || input.includes('.')) {
-        console.log('empty input');
-        return;
-    };
+//     if (!input || input.includes('.')) {
+//         console.log('empty input');
+//         return;
+//     };
 
-    display.textContent+=e.target.textContent;
-    input+=e.target.textContent;
+//     display.textContent+=e.target.textContent;
+//     input+=e.target.textContent;
 
-});
+// });
 
-percent.addEventListener('click', (e) =>  {
+// percent.addEventListener('click', (e) =>  {
 
-    input+=e.target.textContent;
-    evaluate();
+//     input+=e.target.textContent;
+//     evaluate();
 
-});
+// });
 
-backspace.addEventListener('click', () => {
+// backspace.addEventListener('click', () => {
 
-    input = input.slice(0,input.length-1);
-    display.textContent = input;
+//     input = input.slice(0,input.length-1);
+//     display.textContent = input;
 
-});
+// });
