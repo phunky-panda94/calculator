@@ -50,11 +50,6 @@ operators.forEach((operator) => {
     });
 });
 
-clear.addEventListener('click', () => {
-    display.textContent = '';
-    input = '';
-})
-
 equal.addEventListener('click', () => {
 
     if (numberOfOperators == 0) {
@@ -64,6 +59,11 @@ equal.addEventListener('click', () => {
     evaluate();
 
 });
+
+clear.addEventListener('click', () => {
+    display.textContent = '';
+    input = '';
+})
 
 decimal.addEventListener('click', (e) => {
 
