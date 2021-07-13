@@ -1,3 +1,4 @@
+const calculate = require('./calculate');
 const display = document.querySelector('.display');
 const numbers = document.querySelectorAll('.number');
 const operators = document.querySelectorAll('.operator');
@@ -36,7 +37,6 @@ operators.forEach((operator) => {
     operator.addEventListener('click', (e) => {
 
         if (!input) {
-            console.log('empty input');
             return;
         };
 
@@ -68,7 +68,6 @@ clear.addEventListener('click', () => {
 decimal.addEventListener('click', (e) => {
 
     if (!input || input.includes('.')) {
-        console.log('empty input');
         return;
     };
 

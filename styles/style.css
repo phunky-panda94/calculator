@@ -13,9 +13,9 @@ body {
 .container {
     border: 2px solid black;
     border-radius: 0.5rem;
-    bottom: 50%;
     padding: 10px;
-    position: absolute;
+    position: relative;
+    top: 25vh;
 }
 
 .button {
