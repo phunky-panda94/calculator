@@ -2,7 +2,7 @@ let num1;
 let num2;
 let operator;
 
-function calculate(input) {
+export function calculate(input) {
 
     // parse input to identify numbers and operator
     parse(input);
@@ -29,11 +29,9 @@ function calculate(input) {
 function parse(input) {
 
     let parsed = input.split(/([%×\+−÷])/);
-
+    
     num1 = Number(parsed[0]);
     operator = parsed[1];
     num2 = Number(parsed[2]);
 
 };
-
-module.exports = calculate;
